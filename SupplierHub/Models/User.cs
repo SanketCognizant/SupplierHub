@@ -40,5 +40,7 @@ namespace SupplierHub.Models
 		public DateTime CreatedAtUtc { get; set; }
 
 		public DateTime? LastLoginAtUtc { get; set; }
+
+		public ICollection<RFxEvent> Events { get; set; }
 	}
 }
