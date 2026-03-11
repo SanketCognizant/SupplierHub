@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.ComponentModel.DataAnnotations.Schema;
 using SupplierHub.Constants;
 
@@ -8,9 +8,11 @@ namespace SupplierHub.Models
 	public class Notification
 	{
 		public long NotificationId { get; set; }
-		public long UserId { get; set; }          // FK to Users table (IAM)
 
-		public string Message { get; set; }       // Notification text
+		// MUST MATCH User.UserId (int)
+		public int UserId { get; set; }
+
+		public string Message { get; set; }
 		public NotificationCategory Category { get; set; }
 		public NotificationStatus Status { get; set; }
 
@@ -18,3 +20,4 @@ namespace SupplierHub.Models
 		public DateTime UpdatedOn { get; set; }
 	}
 }
+
