@@ -21,7 +21,7 @@ namespace SupplierHub.MapProfile
 			//Inspection
 			CreateMap<Inspection, InspectionCreateDto>().ReverseMap();
 			CreateMap<Inspection, InspectionReadDto>().ReverseMap();
-			createMap<Inspection, InspectionUpdateDto>().ReverseMap();
+			CreateMap<Inspection, InspectionUpdateDto>().ReverseMap();
 
         }
 	}
