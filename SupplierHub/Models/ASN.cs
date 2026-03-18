@@ -22,6 +22,7 @@ namespace SupplierHub.Models
 		[Required]
 		public DateTime CreatedOn { get; set; }
 
+
 		[Required]
 
 		public bool IsDeleted { get; set; }
