@@ -2,9 +2,12 @@ using Microsoft.EntityFrameworkCore;
 using SupplierHub;
 using SupplierHub.MapProfile;
 using AutoMapper;
+<<<<<<< HEAD
+=======
 
 
 
+>>>>>>> 7b7eb7712636875b995b252df9cd4f72252030a1
 using SupplierHub.Repositories;
 using SupplierHub.Repositories.Interface;
 using SupplierHub.Services;
@@ -133,6 +136,39 @@ builder.Services.AddScoped<IUserRoleService, UserRoleService>();
 // AuditLog repository & service
 builder.Services.AddScoped<IAuditLogRepository, AuditLogRepository>();
 builder.Services.AddScoped<IAuditLogService, AuditLogService>();
+
+// ==================
+// NEERAJ MODULES
+// ===================
+
+//PurchaseOrder Repository and Service
+builder.Services.AddScoped<IPurchaseOrderRepository, PurchaseOrderRepository>();
+builder.Services.AddScoped<IPurchaseOrderService, PurchaseOrderService>();
+
+//ErpExportRef Repository and Service
+builder.Services.AddScoped<IErpExportRefRepository, ErpExportRefRepository>();
+builder.Services.AddScoped<IErpExportRefService, ErpExportRefService>();
+
+//PoLine Repository and Service
+builder.Services.AddScoped<IPoLineRepository, PoLineRepository>();
+builder.Services.AddScoped<IPoLineService, PoLineService>();
+
+//PoAck Repository and Services
+builder.Services.AddScoped<IPoAckRepository, PoAckRepository>();
+builder.Services.AddScoped<IPoAckService, PoAckService>();
+
+// PoRevision Repository and Services
+builder.Services.AddScoped<IPoRevisionRepository, PoRevisionRepository>();
+builder.Services.AddScoped<IPoRevisionService, PoRevisionService>();
+
+// Invoice Repository and Services
+builder.Services.AddScoped<IInvoiceRepository, InvoiceRepository>();
+builder.Services.AddScoped<IInvoiceService, InvoiceService>();
+
+//InvoiceLine Repository and Services
+builder.Services.AddScoped<IInvoiceLineRepository, InvoiceLineRepository>();
+builder.Services.AddScoped<IInvoiceLineService, InvoiceLineService>();
+
 
 
 
