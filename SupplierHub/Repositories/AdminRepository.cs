@@ -17,10 +17,13 @@ namespace SupplierHub.Repositories
 		/// Retrieves a system configuration by its ID.
 		/// </summary>
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 		/// <param name="id">The configuration ID</param>
 		/// <returns>SystemConfig if found; null otherwise</returns>
 >>>>>>> 2c384cec079b38035b6f3d79275d861ba17d7854
+=======
+>>>>>>> 8d1d9642f7053121dff806a2b8cb9475ac41d603
 		public Task<SystemConfig?> GetSystemConfigByIdAsync(long id) =>
 			_db.SystemConfigs.FirstOrDefaultAsync(x => x.ConfigID == id);
 
@@ -28,10 +31,13 @@ namespace SupplierHub.Repositories
 		/// Retrieves a system configuration by its config key.
 		/// </summary>
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 		/// <param name="configKey">The configuration key</param>
 		/// <returns>SystemConfig if found; null otherwise</returns>
 >>>>>>> 2c384cec079b38035b6f3d79275d861ba17d7854
+=======
+>>>>>>> 8d1d9642f7053121dff806a2b8cb9475ac41d603
 		public Task<SystemConfig?> GetSystemConfigByKeyAsync(string configKey) =>
 			_db.SystemConfigs.FirstOrDefaultAsync(x => x.ConfigKey == configKey);
 
@@ -39,9 +45,12 @@ namespace SupplierHub.Repositories
 		/// Retrieves all system configurations.
 		/// </summary>
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 		/// <returns>List of SystemConfig</returns>
 >>>>>>> 2c384cec079b38035b6f3d79275d861ba17d7854
+=======
+>>>>>>> 8d1d9642f7053121dff806a2b8cb9475ac41d603
 		public Task<List<SystemConfig>> GetAllSystemConfigsAsync() =>
 			_db.SystemConfigs.ToListAsync();
 
@@ -49,10 +58,13 @@ namespace SupplierHub.Repositories
 		/// Adds a new system configuration to the database.
 		/// </summary>
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 		/// <param name="config">SystemConfig to add</param>
 		/// <returns>Added SystemConfig</returns>
 >>>>>>> 2c384cec079b38035b6f3d79275d861ba17d7854
+=======
+>>>>>>> 8d1d9642f7053121dff806a2b8cb9475ac41d603
 		public async Task<SystemConfig> AddSystemConfigAsync(SystemConfig config)
 		{
 			_db.SystemConfigs.Add(config);
@@ -64,10 +76,13 @@ namespace SupplierHub.Repositories
 		/// Updates an existing system configuration in the database.
 		/// </summary>
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 		/// <param name="config">SystemConfig to update</param>
 		/// <returns>Updated SystemConfig</returns>
 >>>>>>> 2c384cec079b38035b6f3d79275d861ba17d7854
+=======
+>>>>>>> 8d1d9642f7053121dff806a2b8cb9475ac41d603
 		public async Task<SystemConfig?> UpdateSystemConfigAsync(SystemConfig config)
 		{
 			_db.SystemConfigs.Update(config);
@@ -79,10 +94,13 @@ namespace SupplierHub.Repositories
 		/// Retrieves an approval rule by its ID.
 		/// </summary>
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 		/// <param name="id">The approval rule ID</param>
 		/// <returns>ApprovalRule if found; null otherwise</returns>
 >>>>>>> 2c384cec079b38035b6f3d79275d861ba17d7854
+=======
+>>>>>>> 8d1d9642f7053121dff806a2b8cb9475ac41d603
 		public Task<ApprovalRule?> GetApprovalRuleByIdAsync(long id) =>
 			_db.ApprovalRules.FirstOrDefaultAsync(x => x.RuleID == id);
 
@@ -90,9 +108,12 @@ namespace SupplierHub.Repositories
 		/// Retrieves all approval rules.
 		/// </summary>
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 		/// <returns>List of ApprovalRule</returns>
 >>>>>>> 2c384cec079b38035b6f3d79275d861ba17d7854
+=======
+>>>>>>> 8d1d9642f7053121dff806a2b8cb9475ac41d603
 		public Task<List<ApprovalRule>> GetAllApprovalRulesAsync() =>
 			_db.ApprovalRules.ToListAsync();
 
@@ -100,10 +121,13 @@ namespace SupplierHub.Repositories
 		/// Retrieves all approval rules for a specific scope.
 		/// </summary>
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 		/// <param name="scope">The scope to filter by</param>
 		/// <returns>List of ApprovalRule for the given scope</returns>
 >>>>>>> 2c384cec079b38035b6f3d79275d861ba17d7854
+=======
+>>>>>>> 8d1d9642f7053121dff806a2b8cb9475ac41d603
 		public Task<List<ApprovalRule>> GetApprovalRulesByScopeAsync(string scope) =>
 			_db.ApprovalRules.Where(x => x.Scope == scope).ToListAsync();
 
@@ -111,10 +135,13 @@ namespace SupplierHub.Repositories
 		/// Adds a new approval rule to the database.
 		/// </summary>
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 		/// <param name="rule">ApprovalRule to add</param>
 		/// <returns>Added ApprovalRule</returns>
 >>>>>>> 2c384cec079b38035b6f3d79275d861ba17d7854
+=======
+>>>>>>> 8d1d9642f7053121dff806a2b8cb9475ac41d603
 		public async Task<ApprovalRule> AddApprovalRuleAsync(ApprovalRule rule)
 		{
 			_db.ApprovalRules.Add(rule);
@@ -126,10 +153,13 @@ namespace SupplierHub.Repositories
 		/// Updates an existing approval rule in the database.
 		/// </summary>
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 		/// <param name="rule">ApprovalRule to update</param>
 		/// <returns>Updated ApprovalRule</returns>
 >>>>>>> 2c384cec079b38035b6f3d79275d861ba17d7854
+=======
+>>>>>>> 8d1d9642f7053121dff806a2b8cb9475ac41d603
 		public async Task<ApprovalRule?> UpdateApprovalRuleAsync(ApprovalRule rule)
 		{
 			_db.ApprovalRules.Update(rule);
